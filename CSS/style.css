@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    background-image: url('/img/layered-waves-haikei\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+img{
+    width: 100%;
+}
+.container{
+    gap: 2px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card_section_1{
+    text-align: center;
+}
+.card_section_1 h2{
+    font-size: 30px;
+}
+.card_section_1 p{
+    font-size: 20px;
+}
+.card_section_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.card_section_2 h1{
+    font-size: 48px;
+}
+.card_section_2 p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+.foto{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+  
+  
+  
+
+
+
+@media screen and (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+}
