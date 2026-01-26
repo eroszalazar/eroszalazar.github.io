@@ -470,21 +470,6 @@ window.addEventListener('scroll', () => {
   lastY = y;
 });
 
-// Form (demo)
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    const lang = localStorage.getItem('lang') || 'es';
-    const data = Object.fromEntries(new FormData(e.target).entries());
-    const msg = (lang === 'es')
-      ? `¡Gracias, ${data.name || 'colega'}! Te responderé a ${data.email} pronto.`
-      : `Thanks, ${data.name || 'friend'}! I’ll get back to you at ${data.email} soon.`;
-    alert(msg);
-    e.target.reset();
-  });
-}
-
 // =========== NAV HAMBURGUESA MÓVIL CON NAV-MOBILE ===========
 (function () {
   const btn = document.getElementById('navToggle');
