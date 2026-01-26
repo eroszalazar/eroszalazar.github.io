@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title">Eros Zalazar – Ingeniero en Sistemas | IT Support</title>
+  <link rel="icon" href="/assets/img/Icono.ico">
+
+  <!-- SEO -->
+  <meta name="description" data-i18n-attr="content" content="Eros Zalazar – Estudiante de Ingeniería en Sistemas. HelpDesk en KPMG. Experiencia en Infraestructura y Financial Support. Rosario, Argentina."/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link id="theme" rel="stylesheet" href="css/theme-linkedin-classic.css" />
+</head>
+<body>
+  <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo" data-i18n-html="logo_html">Eros<span>Zalazar</span></div>
+
+            <!-- 🔽 Botón hamburguesa para móvil -->
+            <button class="hamburger" id="navToggle"
+                    aria-label="Abrir menú"
+                    aria-controls="siteNav"
+                    aria-expanded="false">
+            <span></span><span></span><span></span>
+            </button>
+
+            <!-- 🔽 Agregamos id al nav -->
+            <nav class="nav" id="siteNav">
+            <a href="#inicio" class="nav__link" data-i18n="nav_home">Inicio</a>
+            <a href="#sobremi" class="nav__link" data-i18n="nav_about">Sobre mí</a>
+            <a href="#habilidades" class="nav__link" data-i18n="nav_skills">Habilidades</a>
+            <a href="#experiencia" class="nav__link" data-i18n="nav_experience">Experiencia</a>
+            <a href="#cursos" class="nav__link" data-i18n="nav_courses">Cursos</a>
+            <a href="#contacto" class="btn btn--outline header__cta" data-i18n="nav_cta">Contáctame</a>
+            <button id="langToggle" class="btn btn--ghost" aria-label="Change language">EN</button>
+            </nav>
+        </div>
+    </header>
+    <!-- NAV MÓVIL INDEPENDIENTE -->
+    <nav class="nav-mobile" id="mobileNav" aria-label="Navegación principal móvil">
+        <a href="#inicio" class="nav-mobile__link" data-i18n="nav_home">Inicio</a>
+        <a href="#sobremi" class="nav-mobile__link" data-i18n="nav_about">Sobre mí</a>
+        <a href="#habilidades" class="nav-mobile__link" data-i18n="nav_skills">Habilidades</a>
+        <a href="#experiencia" class="nav-mobile__link" data-i18n="nav_experience">Experiencia</a>
+        <a href="#cursos" class="nav-mobile__link" data-i18n="nav_courses">Cursos</a>
+        <a href="#contacto" class="nav-mobile__link" data-i18n="nav_cta">Contáctame</a>
+
+        <!-- Botón de idioma solo para móvil -->
+        <button id="langToggleMobile" class="nav-mobile__lang" aria-label="Change language">EN</button>
+    </nav>
+
+
+
+  <!-- Hero -->
+    <section id="inicio" class="hero reveal">
+        <div class="hero__grid">
+            <div class="hero__copy">
+                <h1 class="hero__title" data-i18n-html="hero_title">Hola, soy <span>Eros Zalazar</span></h1>
+
+                <p class="hero__subtitle" data-i18n-html="hero_subtitle">
+                20 años · Rosario, Argentina — Estudiante de Ingeniería en Sistemas.
+                Actualmente <strong>HelpDesk en KPMG</strong>. <strong>Profesional de IT</strong> con una fuerte vocación por las nuevas tecnologías.
+                </p>
+
+                <div class="hero__badges">
+                    <span class="chip" data-i18n="badge_it">Soporte de IT</span>
+                    <span class="chip" data-i18n="badge_infra">Infraestructura</span>
+                    <span class="chip" data-i18n="badge_nube">Servicios en la Nube</span>
+                    <span class="chip" data-i18n="badge_ia">Entusiasta de la IA</span>
+                </div>
+
+                <div class="hero__actions">
+                    <a href="#experiencia" class="btn btn--primary" data-i18n="btn_view_experience">Ver experiencia</a>
+                    <a href="#contacto" class="btn btn--ghost" data-i18n="btn_contact">Hablemos</a>
+                </div>
+
+                <!-- 🔗 Redes en el hero -->
+                <div class="socials socials--hero">
+                    <a class="btn-icon" href="https://www.linkedin.com/in/eroszalazar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <!-- LinkedIn SVG -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.4v1.56h.05c.47-.9 1.62-1.85 3.34-1.85 3.57 0 4.23 2.35 4.23 5.41v6.33ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>
+                    </a>
+                    <a class="btn-icon" href="https://github.com/eroszalazar" target="_blank" rel="noopener" aria-label="GitHub">
+                        <!-- GitHub SVG -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.8-.25.8-.56v-2.02c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.29-1.71-1.29-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.52.11-3.17 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 5.83 0c2.22-1.51 3.2-1.2 3.2-1.2.63 1.65.23 2.87.11 3.17.75.82 1.2 1.87 1.2 3.15 0 4.51-2.73 5.49-5.34 5.79.42.36.8 1.06.8 2.14v3.17c0 .31.21.67.81.55A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                    </a>
+                    <a class="btn-icon" href="https://learn.microsoft.com/es-es/users/eroszalazar/" target="_blank" rel="noopener" aria-label="Microsoft">
+                    <!-- Microsoft SVG -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2"  y="2"  width="9" height="9" fill="currentColor" />
+                            <rect x="13" y="2"  width="9" height="9" fill="currentColor" />
+                            <rect x="2"  y="13" width="9" height="9" fill="currentColor" />
+                            <rect x="13" y="13" width="9" height="9" fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 📸 Foto en el área visual -->
+            <div class="hero__visual" aria-hidden="true">
+                <figure class="hero__photo floating">
+                <img src="assets/img/eros.jpeg" alt="Foto de Eros Zalazar" />
+                </figure>
+            </div>
+            </div>
+
+        <!-- blobs desactivados por tema -->
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobremi" class="section reveal">
+        <div class="container">
+            <h2 class="section__title" data-i18n="about_title">Sobre mí</h2>
+            <p class="section__lead" data-i18n="about_lead">
+                Soy Eros, estudiante de Ingeniería en Sistemas y profesional de IT Support.
+                Disfruto resolver problemas, mejorar flujos de trabajo y acercar tecnología a las personas.
+                Me enfoco en experiencia del usuario, rendimiento y buenas prácticas (documentación, Git y comunicación clara).
+            </p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section reveal">
+        <div class="container">
+            <h2 class="section__title" data-i18n="skills_title">Habilidades principales</h2>
+
+            <div class="chips">
+                <span class="chip" data-i18n="chip_ticketing">Ticketing (ServiceDesk)</span>
+                <span class="chip" data-i18n="chip_ad_m365">AD & Microsoft 365</span>
+                <span class="chip" data-i18n="chip_ps">PowerShell (básico)</span>
+                <span class="chip" data-i18n="chip_sharepoint">SharePoint & Flujos</span>
+                <span class="chip" data-i18n="chip_qualys">Vulnerabilidades (Qualys)</span>
+                <span class="chip" data-i18n="chip_okta">OKTA / SSO</span>
+                <span class="chip" data-i18n="chip_hw_net">HW & Redes básicas</span>
+                <span class="chip" data-i18n="chip_docs">Documentación & SOPs</span>
+            </div>
+
+            <div class="cards">
+                <article class="card tilt reveal">
+                    <h3 data-i18n="card_it_title">Soporte IT (Financial & Corporate)</h3>
+                    <p data-i18n="card_it_desc">
+                    Atención L1 y colaboración en L2. Gestión de tickets, análisis de incidentes en sistemas core y comunicación clara con usuarios.
+                    </p>
+                </article>
+                <article class="card tilt reveal">
+                    <h3 data-i18n="card_infra_title2">Infraestructura & Seguridad</h3>
+                    <p data-i18n="card_infra_desc2">
+                    Diagnóstico HW/SW, parches y actualizaciones; reducción de riesgos con hallazgos de Qualys y cumplimiento de políticas.
+                    </p>
+                </article>
+                <article class="card tilt reveal">
+                    <h3 data-i18n="card_auto_title">Automatización & Documentación</h3>
+                    <p data-i18n="card_auto_desc">
+                    Scripts ligeros en PowerShell, flujos de aprobación en SharePoint y SOPs que mejoran tiempos y calidad del soporte.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section reveal">
+        <div class="container">
+            <h2 class="section__title" data-i18n="exp_title">Experiencia</h2>
+            <p class="section__lead" data-i18n="exp_lead">
+            Roles recientes en entornos corporativos y trabajo freelance en soporte técnico.
+            </p>
+
+            <div class="timeline">
+                <!-- KPMG -->
+                <article class="t-item">
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <header>
+                            <h3 data-i18n="exp_kpmg_title">KPMG · HelpDesk L1 (Full-Time)</h3>
+                            <span class="t-date" data-i18n="exp_kpmg_date">mar. 2025 – Actualidad</span>
+                        </header>
+                        <p data-i18n="exp_kpmg_desc">
+                            Soporte L1 y colaboración en L2. Gestión de tickets, cuentas y accesos, O365/AD, VPN y herramientas corporativas.
+                            Enfoque en automatizaciones ligeras, documentación y mejora continua.
+                        </p>
+                        <ul class="t-tags">
+                            <li>AD</li><li>O365</li><li>ServiceDesk</li><li>VPN</li><li>Remote</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- John Deere · Infraestructura -->
+                <article class="t-item">
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <header>
+                            <h3 data-i18n="exp_jd_infra_title">John Deere · Infraestructura</h3>
+                            <span class="t-date" data-i18n="exp_jd_infra_date">mar. 2024 – jul. 2024</span>
+                        </header>
+                        <p data-i18n="exp_jd_infra_desc">
+                            Diagnóstico HW/SW, impresoras y periféricos. Parches/actualizaciones y soporte a estaciones de trabajo (oficina y planta).
+                            Documentación de procedimientos y cumplimiento de políticas.
+                        </p>
+                        <ul class="t-tags">
+                            <li>Infra</li><li>Redes</li><li>Docs</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- John Deere · IT Financial Support -->
+                <article class="t-item">
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <header>
+                            <h3 data-i18n="exp_jd_fin_title">John Deere · Soporte IT Financial</h3>
+                            <span class="t-date" data-i18n="exp_jd_fin_date">mar. 2024 – jul. 2024</span>
+                        </header>
+                        <p data-i18n="exp_jd_fin_desc">
+                            Ticketing de sistemas core, ejecución/coordinación de scripts en dev/prod, flujos de aprobación en SharePoint
+                            y manejo de vulnerabilidades con Qualys.
+                        </p>
+                        <ul class="t-tags">
+                            <li>ServiceNow</li><li>SharePoint</li><li>Qualys</li><li>Scripts</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Freelance barrio -->
+                <article class="t-item">
+                    <div class="t-dot"></div>
+                    <div class="t-content">
+                        <header>
+                            <h3 data-i18n="exp_freelance_title">Freelance · Técnico PC</h3>
+                            <span class="t-date" data-i18n="exp_freelance_date">2022 – 2024</span>
+                        </header>
+                        <p data-i18n="exp_freelance_desc">
+                            Reparación y mantenimiento de PC/notebooks, instalación de SO y software, configuración de redes hogareñas,
+                            backup y recuperación básica de datos. Atención al cliente y gestión end-to-end.
+                        </p>
+                        <ul class="t-tags">
+                            <li>HW/SW</li><li>Redes</li><li>Backup</li><li>Atención al cliente</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cursos & Certificados -->
+    <section id="cursos" class="section reveal">
+        <div class="container">
+            <h2 class="section__title" data-i18n="courses_title">Cursos & Certificados</h2>
+            <p class="section__lead" data-i18n="courses_lead">
+            Selección de cursos realizados en LinkedIn Learning. Filtrá por habilidad para ver los más relevantes.
+            </p>
+
+            <!-- Filtros por habilidad -->
+            <div class="chips" id="courseFilters" aria-label="Filtros">
+            <!-- se rellenan desde JS -->
+            </div>
+
+            <!-- Grid de cursos -->
+            <div id="coursesGrid" class="courses-grid">
+                <!-- se rellena desde JS -->
+                <noscript>
+                    <p>Activa JavaScript para ver los cursos.</p>
+                </noscript>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Contacto -->
+    <section id="contacto" class="section reveal">
+        <div class="container">
+            <h2 class="section__title" data-i18n="contact_title">Contacto</h2>
+
+            <form id="contactForm"
+            class="form"
+            action="https://formsubmit.co/eroszalazar@gmail.com"
+            method="POST">
+
+                <div class="form__row">
+                    <input type="text" name="name" required
+                            placeholder="Tu nombre"
+                            data-i18n="ph_name"
+                            data-i18n-attr="placeholder" />
+                    <input type="email" name="email" required
+                            placeholder="Tu email"
+                            data-i18n="ph_email"
+                            data-i18n-attr="placeholder" />
+                </div>
+                <textarea name="message" rows="5" required
+                        placeholder="Tu mensaje"
+                        data-i18n="ph_message"
+                        data-i18n-attr="placeholder"></textarea>
+                <button type="submit" class="btn btn--primary" data-i18n="btn_send">Enviar</button>
+                <!-- Honeypot anti-spam -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- Desactivar captcha de FormSubmit si querés (puedes quitarlo para usar el suyo) -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redirección después de enviar (por ejemplo, a tu mismo sitio con un #gracias) -->
+                <input type="hidden" name="_next" value="https://eroszalazar.github.io/#contacto">
+
+                <!-- Asunto del mail -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio de Eros">
+            </form>
+
+            <div class="socials">
+                <a href="#" aria-label="GitHub" data-i18n="social_github">GitHub</a> ·
+                <a href="#" aria-label="LinkedIn" data-i18n="social_linkedin">LinkedIn</a> ·
+                <a href="mailto:eroszalazar@gmail.com" aria-label="Email" data-i18n="social_email">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="f-col">
+                <h4 data-i18n="foot_menu">Menú</h4>
+                <a href="#inicio" data-i18n="nav_home">Inicio</a>
+                <a href="#sobremi" data-i18n="nav_about">Sobre mí</a>
+                <a href="#experiencia" data-i18n="nav_experience">Experiencia</a>
+            </div>
+            <div class="f-col">
+                <h4 data-i18n="foot_social">Redes</h4>
+                <a href="https://github.com/eroszalazar" target="_blank" rel="noopener" data-i18n="social_github">GitHub</a>
+                <a href="https://www.linkedin.com/in/eroszalazar/" target="_blank" rel="noopener" data-i18n="social_linkedin">LinkedIn</a>
+                <a href="https://learn.microsoft.com/es-es/users/eroszalazar/" target="_blank" rel="noopener" data-i18n="social_microsoft">Microsoft</a>
+            </div>
+            <div class="f-col">
+                <h4 data-i18n="foot_contact">Contacto</h4>
+                <a href="mailto:eroszalazar@gmail.com" data-i18n="foot_email">Email</a>
+                <a href="tel:+5493415213524" data-i18n="foot_phone">Teléfono</a>
+            </div>
+        </div>
+        <p class="footer__copy" data-i18n="foot_copy">© 2025 Eros Zalazar — Rosario, Argentina</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+    <!-- Lightbox certificado -->
+    <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">
+        <button class="lightbox__close" aria-label="Cerrar">×</button>
+        <img src="" alt="Certificado" />
+    </div>
+</body>
+</html>
