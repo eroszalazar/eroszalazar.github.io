@@ -595,7 +595,7 @@ window.addEventListener('scroll', () => {
 })();
 
 // =========== MODAL DESCARGAR CV ===========
-(function initCvModal(){
+function initCvModal(){
   const cvBtn = document.getElementById('cvBtn');
   const modal = document.getElementById('cvModal');
   const overlay = document.getElementById('cvModalOverlay');
@@ -610,18 +610,24 @@ window.addEventListener('scroll', () => {
   if (!cvBtn || !modal) return;
 
   function openModal(){
-    choiceView.hidden = false;
-    successView.hidden = true;
+    if (choiceView) choiceView.hidden = false;
+    if (successView) successView.hidden = true;
     modal.hidden = false;
+    modal.removeAttribute('hidden');
     document.body.style.overflow = 'hidden';
   }
 
   function closeModal(){
     modal.hidden = true;
+    modal.setAttribute('hidden', '');
     document.body.style.overflow = '';
   }
 
-  cvBtn.addEventListener('click', openModal);
+  cvBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+
   if (overlay) overlay.addEventListener('click', closeModal);
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (successCloseBtn) successCloseBtn.addEventListener('click', closeModal);
@@ -631,7 +637,8 @@ window.addEventListener('scroll', () => {
   });
 
   optBtns.forEach(btn=>{
-    btn.addEventListener('click', ()=>{
+    btn.addEventListener('click', (e)=>{
+      e.preventDefault();
       const downloadLang = btn.getAttribute('data-lang') || 'es';
       const fileUrl = downloadLang === 'en' 
         ? 'assets/docs/CV_Eros_Zalazar_EN.pdf' 
@@ -650,19 +657,25 @@ window.addEventListener('scroll', () => {
 
       // Mostrar mensaje de éxito y agradecimiento según idioma seleccionado
       if (downloadLang === 'en') {
-        successTitle.textContent = "Download Successful!";
-        successMsg.textContent = "Thank you very much for downloading my CV, I look forward to your message :)";
+        if (successTitle) successTitle.textContent = "Download Successful!";
+        if (successMsg) successMsg.textContent = "Thank you very much for downloading my CV, I look forward to your message :)";
         if (successCloseBtn) successCloseBtn.textContent = "Close";
       } else {
-        successTitle.textContent = "¡Descarga exitosa!";
-        successMsg.textContent = "muchas gracias por descargar mi cv, espero pronto tu mensaje :)";
+        if (successTitle) successTitle.textContent = "¡Descarga exitosa!";
+        if (successMsg) successMsg.textContent = "muchas gracias por descargar mi cv, espero pronto tu mensaje :)";
         if (successCloseBtn) successCloseBtn.textContent = "Aceptar";
       }
 
-      choiceView.hidden = true;
-      successView.hidden = false;
+      if (choiceView) choiceView.hidden = true;
+      if (successView) successView.hidden = false;
     });
   });
-})();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCvModal);
+} else {
+  initCvModal();
+}
 
 
