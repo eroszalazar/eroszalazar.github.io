@@ -251,8 +251,17 @@ a{text-decoration:none;color:inherit}
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(10, 102, 194, 0.12);
 }
-.cv-opt-btn__flag{
-  font-size: 1.8rem; line-height: 1;
+.cv-opt-btn__badge{
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 12px;
+  background: rgba(10, 102, 194, 0.08); color: var(--pri);
+  font-weight: 700; font-size: 1.05rem; letter-spacing: .5px;
+  border: 1px solid rgba(10, 102, 194, 0.18);
+  flex-shrink: 0;
+  transition: all .2s ease;
+}
+.cv-opt-btn:hover .cv-opt-btn__badge{
+  background: var(--pri); color: #ffffff;
 }
 .cv-opt-btn__text{
   flex: 1; display: flex; flex-direction: column; gap: .15rem;
