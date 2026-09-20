@@ -3,8 +3,8 @@
  **********************/
 const I18N = {
   es: {
-    title: "Eros Zalazar – Ingeniero en Sistemas | IT Support",
-    meta_description: "Eros Zalazar – Estudiante de Ingeniería en Sistemas. HelpDesk en KPMG. Experiencia en Infraestructura y Financial Support. Rosario, Argentina.",
+    title: "Eros Zalazar – Ingeniero en Sistemas | Desarrollador & Consultor IT",
+    meta_description: "Eros Zalazar – Estudiante de Ingeniería en Sistemas. Desarrollador y Consultor IT Jr. en KPMG. Soluciones de automatización, Node.js, SQL Server, Power BI y Azure. Buenos Aires, Argentina.",
     logo_html: "Eros<span>Zalazar</span>",
     // Nav
     nav_home: "Inicio",
@@ -17,7 +17,7 @@ const I18N = {
     // Dentro de I18N.es
     nav_courses: "Cursos",
     courses_title: "Cursos & Certificados",
-    courses_lead: "Selección de cursos realizados en LinkedIn Learning. Filtrá por habilidad para ver los más relevantes.",
+    courses_lead: "Selección de cursos realizados en LinkedIn Learning y plataformas oficiales. Filtrá por habilidad para ver los más relevantes.",
     courses_filter_all: "Todos",
     courses_btn_view: "Ver certificado",
     courses_meta_hours: "hs",
@@ -25,13 +25,14 @@ const I18N = {
 
     // Hero
     hero_title: "Hola, soy <span>Eros Zalazar</span>",
-    hero_subtitle: "20 años · Rosario, Argentina — Estudiante de Ingeniería en Sistemas. Actualmente <strong>HelpDesk en KPMG</strong>. <strong>Profesional de IT</strong> con una fuerte vocación por las nuevas tecnologías.",
-    badge_city: "Rosario 🇦🇷",
+    hero_subtitle: "21 años · Buenos Aires, Argentina — Estudiante de Ingeniería en Sistemas. Actualmente <strong>Desarrollador / Consultor IT Jr. en KPMG</strong>. <strong>Profesional de IT</strong> orientado a la automatización, integración de sistemas y desarrollo de soluciones eficientes.",
+    badge_city: "Buenos Aires 🇦🇷",
+    badge_auto: "Automatización & RPA",
+    badge_nodejs: "Node.js & APIs",
+    badge_azure: "Cloud & Azure",
+    badge_bi: "Datos & BI",
     badge_it: "Soporte de IT",
     badge_infra: "Infraestructura",
-    badge_nube: "Servicios en la Nube",
-    badge_ia: "Entusiasta de la IA",
-    badge_fin: "Financial Support",
     btn_view_experience: "Ver experiencia",
     btn_contact: "Hablemos",
     btn_cv: "Descargar CV",
@@ -39,32 +40,37 @@ const I18N = {
     pill_support: "Soporte",
     // About
     about_title: "Sobre mí",
-    about_lead: "Formo parte del HelpDesk de KPMG, brindando soporte técnico integral en un entorno corporativo. Atiendo incidentes L1 y colaboro en algunos L2, impulsando mejoras con automatizaciones ligeras y buenas prácticas. También elaboro documentación técnica para facilitar la adopción y el uso eficiente de las soluciones del equipo. Intereses: Cloud, Ciberseguridad, Automatización de procesos e Inteligancia Artificial.",
+    about_lead: "Estudiante de Ingeniería en Sistemas con interés en el desarrollo de software, la automatización y la inteligencia artificial. Orientado a la creación de soluciones tecnológicas eficientes mediante programación, integración de sistemas y desarrollo de aplicaciones, combinando formación académica con experiencia práctica en entornos corporativos.",
     // Skills
-    // Título ya existe:
     skills_title: "Habilidades principales",
     // Chips
+    chip_aa: "Automation Anywhere (RPA)",
+    chip_pa: "Power Automate",
+    chip_node: "Node.js & APIs REST",
+    chip_sql: "SQL Server",
+    chip_bi: "Power BI & Analytics",
+    chip_azure: "Microsoft Azure",
+    chip_sharepoint: "SharePoint & Flujos",
+    chip_ai: "IA & Prompt Engineering",
     chip_ticketing: "Ticketing (ServiceDesk)",
     chip_ad_m365: "AD & Microsoft 365",
-    chip_ps: "PowerShell (básico)",
-    chip_sharepoint: "SharePoint & Flujos",
-    chip_qualys: "Vulnerabilidades (Qualys)",
-    chip_okta: "OKTA / SSO",
-    chip_hw_net: "HW & Redes básicas",
-    chip_docs: "Prompt Engineering",
     // Cards
-    card_it_title: "Soporte IT (Financial & Corporate)",
-    card_it_desc: "Atención L1 y colaboración en L2. Gestión de tickets, análisis de incidentes en sistemas core y comunicación clara con usuarios.",
-    card_infra_title2: "Infraestructura & Seguridad",
-    card_infra_desc2: "Diagnóstico HW/SW, parches y actualizaciones; reducción de riesgos con hallazgos de Qualys y cumplimiento de políticas.",
-    card_auto_title: "Automatización & IA",
-    card_auto_desc: "Aplicación de modelos de IA y prompt engineering para generar documentación, asistir en troubleshooting y automatizar flujos operativos.",
+    card_auto_title: "Automatización & RPA",
+    card_auto_desc: "Diseño y desarrollo de bots con Automation Anywhere y flujos en Power Automate, optimizando tareas operativas y reduciendo la intervención manual.",
+    card_dev_title: "Desarrollo & Integraciones",
+    card_dev_desc: "Construcción de componentes y soluciones con Node.js, consumo e integración de APIs REST y manipulación de datos en SQL Server.",
+    card_data_title: "Cloud & Business Intelligence",
+    card_data_desc: "Desarrollo y soporte en el ecosistema Microsoft Azure, junto con la elaboración de reportes y dashboards en Power BI para seguimiento de KPIs.",
     // Experiencia
     exp_title: "Experiencia",
     exp_lead: "Roles recientes en entornos corporativos y trabajo freelance en soporte técnico.",
 
+    exp_kpmg_dev_title: "KPMG · Desarrollador / Consultor IT Jr. (Full-Time)",
+    exp_kpmg_dev_date: "mar. 2026 – Actualidad",
+    exp_kpmg_dev_desc: "Diseño e implementación de soluciones de automatización con Automation Anywhere y Power Automate. Desarrollo de componentes en Node.js, consumo de APIs REST y consultas/manipulación de datos en SQL Server. Creación de reportes en Power BI y desarrollo en el ecosistema Microsoft Azure.",
+
     exp_kpmg_title: "KPMG · HelpDesk L1 (Full-Time)",
-    exp_kpmg_date: "mar. 2025 – Actualidad",
+    exp_kpmg_date: "mar. 2025 – mar. 2026",
     exp_kpmg_desc: "Soporte L1 y colaboración en L2. Gestión de tickets, cuentas y accesos, O365/AD, VPN y herramientas corporativas. Enfoque en automatizaciones ligeras, documentación y mejora continua.",
 
     exp_jd_infra_title: "John Deere · Infraestructura",
@@ -81,7 +87,7 @@ const I18N = {
 
     // CTA
     cta_title: "¿Creamos algo juntos?",
-    cta_lead: "Abierto a oportunidades en soporte IT e infraestructura. Me gusta trabajar en equipo y mejorar la experiencia del usuario.",
+    cta_lead: "Abierto a oportunidades en desarrollo, automatización y soluciones IT. Me apasiona trabajar en equipo y optimizar procesos.",
     cta_btn: "Escríbeme",
     // Contact
     contact_title: "Contacto",
@@ -98,15 +104,15 @@ const I18N = {
     foot_contact: "Contacto",
     foot_email: "Email",
     foot_phone: "Teléfono",
-    foot_copy: "© 2025 Eros Zalazar — Rosario, Argentina",
+    foot_copy: "© 2026 Eros Zalazar — Buenos Aires, Argentina",
     // ARIA / labels
     "Anterior": "Anterior",
     "Siguiente": "Siguiente",
     
   },
   en: {
-    title: "Eros Zalazar – Systems Engineering Student | IT Support",
-    meta_description: "Eros Zalazar – Systems Engineering student. HelpDesk at KPMG. Experience in Infrastructure and Financial Support. Rosario, Argentina.",
+    title: "Eros Zalazar – Systems Engineering Student | IT Developer & Consultant",
+    meta_description: "Eros Zalazar – Systems Engineering student. Jr. IT Developer and Consultant at KPMG. Automation solutions, Node.js, SQL Server, Power BI, and Azure. Buenos Aires, Argentina.",
     logo_html: "Eros<span>Zalazar</span>",
     // Nav
     nav_home: "Home",
@@ -120,7 +126,7 @@ const I18N = {
     // Dentro de I18N.en
     nav_courses: "Courses",
     courses_title: "Courses & Certificates",
-    courses_lead: "Selection of LinkedIn Learning courses. Filter by skill to see the most relevant.",
+    courses_lead: "Selection of LinkedIn Learning courses and official certifications. Filter by skill to see the most relevant.",
     courses_filter_all: "All",
     courses_btn_view: "View certificate",
     courses_meta_hours: "h",
@@ -128,13 +134,14 @@ const I18N = {
 
     // Hero
     hero_title: "Hi, I'm <span>Eros Zalazar</span>",
-    hero_subtitle: "20 years · Rosario, Argentina — Systems Engineering student. Currently <strong>HelpDesk at KPMG</strong>. <strong>IT professional</strong> with a strong drive for new technologies.",
-    badge_city: "Rosario 🇦🇷",
+    hero_subtitle: "21 years · Buenos Aires, Argentina — Systems Engineering student. Currently <strong>Jr. IT Developer / Consultant at KPMG</strong>. <strong>IT professional</strong> focused on automation, system integration, and building efficient solutions.",
+    badge_city: "Buenos Aires 🇦🇷",
+    badge_auto: "Automation & RPA",
+    badge_nodejs: "Node.js & APIs",
+    badge_azure: "Cloud & Azure",
+    badge_bi: "Databases & BI",
     badge_it: "IT Support",
     badge_infra: "Infrastructure",
-    badge_nube: "Cloud Services",
-    badge_ia: "AI Enthusiast",
-    badge_fin: "Financial Support",
     btn_view_experience: "View experience",
     btn_contact: "Let’s talk",
     btn_cv: "Download CV",
@@ -142,31 +149,37 @@ const I18N = {
     pill_support: "Support",
     // About
     about_title: "About me",
-    about_lead: "I’m part of KPMG’s HelpDesk, providing end-to-end technical support in a corporate environment. I handle L1 tickets and collaborate on some L2 cases, driving improvements through light automations and best practices. I also create technical documentation to help the team adopt solutions efficiently. Interests: Cloud, Cybersecurity, Process Automation and AI.",
+    about_lead: "Systems Engineering student interested in software development, automation, and artificial intelligence. Focused on creating efficient tech solutions through programming, system integration, and application development, blending academic background with hands-on corporate experience.",
     // Title
     skills_title: "Core skills",
     // Chips
+    chip_aa: "Automation Anywhere (RPA)",
+    chip_pa: "Power Automate",
+    chip_node: "Node.js & REST APIs",
+    chip_sql: "SQL Server",
+    chip_bi: "Power BI & Analytics",
+    chip_azure: "Microsoft Azure",
+    chip_sharepoint: "SharePoint & Flows",
+    chip_ai: "AI & Prompt Engineering",
     chip_ticketing: "Ticketing (ServiceDesk)",
     chip_ad_m365: "AD & Microsoft 365",
-    chip_ps: "PowerShell (basic)",
-    chip_sharepoint: "SharePoint & Flows",
-    chip_qualys: "Vulnerabilities (Qualys)",
-    chip_okta: "OKTA / SSO",
-    chip_hw_net: "HW & Basic Networking",
-    chip_docs: "Prompt Engineering",
     // Cards
-    card_it_title: "IT Support (Financial & Corporate)",
-    card_it_desc: "L1 handling with some L2 collaboration. Ticketing, core-systems incident analysis, and clear user communication.",
-    card_infra_title2: "Infrastructure & Security",
-    card_infra_desc2: "HW/SW diagnosis, patching and updates; risk reduction from Qualys findings and policy compliance.",
-    card_auto_title: "Automation & AI",
-    card_auto_desc: "Application of AI models and prompt engineering to generate documentation, assist with troubleshooting, and automate operational workflows.",
+    card_auto_title: "Automation & RPA",
+    card_auto_desc: "Design and development of bots using Automation Anywhere and workflows in Power Automate, optimizing operational tasks and cutting down manual work.",
+    card_dev_title: "Development & Integrations",
+    card_dev_desc: "Building components and solutions with Node.js, consuming REST APIs, and managing data with SQL Server.",
+    card_data_title: "Cloud & Business Intelligence",
+    card_data_desc: "Development and support across the Microsoft Azure ecosystem, along with Power BI reports and dashboards for KPI tracking.",
     // Experience
     exp_title: "Experience",
     exp_lead: "Recent corporate roles and freelance work in technical support.",
 
+    exp_kpmg_dev_title: "KPMG · Jr. IT Developer / Consultant (Full-Time)",
+    exp_kpmg_dev_date: "Mar 2026 – Present",
+    exp_kpmg_dev_desc: "Design and implementation of process automation solutions with Automation Anywhere and Power Automate. Development of Node.js components, REST API consumption, and SQL Server data querying/manipulation. Power BI reporting and development within the Microsoft Azure ecosystem.",
+
     exp_kpmg_title: "KPMG · HelpDesk L1 (Full-Time)",
-    exp_kpmg_date: "Mar 2025 – Present",
+    exp_kpmg_date: "Mar 2025 – Mar 2026",
     exp_kpmg_desc: "L1 support with some L2 collaboration. Ticketing, accounts & access, O365/AD, VPN and corporate tools. Focus on light automations, documentation and continuous improvement.",
 
     exp_jd_infra_title: "John Deere · Infrastructure",
@@ -183,7 +196,7 @@ const I18N = {
 
     // CTA
     cta_title: "Shall we build something together?",
-    cta_lead: "Open to IT support & infrastructure opportunities. I love teamwork and improving user experience.",
+    cta_lead: "Open to software development, automation, and IT solutions opportunities. Passionate about teamwork and process optimization.",
     cta_btn: "Write me",
     // Contact
     contact_title: "Contact",
@@ -200,7 +213,7 @@ const I18N = {
     foot_contact: "Contact",
     foot_email: "Email",
     foot_phone: "Phone",
-    foot_copy: "© 2025 Eros Zalazar — Rosario, Argentina",
+    foot_copy: "© 2026 Eros Zalazar — Buenos Aires, Argentina",
     // ARIA / labels
     "Anterior": "Previous",
     "Siguiente": "Next",
@@ -257,8 +270,68 @@ function applyI18N(lang){
 // === CURSOS ===
 const COURSES = [
   {
+    title_es: "Test Automation Foundations",
+    title_en: "Test Automation Foundations",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 1.5,
+    durationStr: "1h 30m",
+    skills: ["Automation", "QA", "Software Testing"],
+    linkedin: "https://www.linkedin.com/learning/certificates/71528724af4d6c394058a89cf4b9ee9004dd25e0f71c3a01f7ad62c0ea0d7377"
+  },
+  {
+    title_es: "Introduction to IT Automation",
+    title_en: "Introduction to IT Automation",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 1.8,
+    durationStr: "1h 45m",
+    skills: ["Automation", "IT Automation", "DevOps", "Scripting"],
+    linkedin: "https://www.linkedin.com/learning/certificates/3dac3071b38e4dc700d74d0d62bad372ff92c835c52b77b918a7a4db697bcd8e"
+  },
+  {
+    title_es: "Introducción al examen PL-300: Microsoft Power BI Data Analyst",
+    title_en: "Introduction to PL-300: Microsoft Power BI Data Analyst",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 1.5,
+    durationStr: "1h 30m",
+    skills: ["Power BI", "Data Analysis", "Microsoft"],
+    linkedin: "https://www.linkedin.com/learning/certificates/3ccbefd745a805449e3dcd8ab9127c5676280a28a810eece676e7a3da0bc81f3"
+  },
+  {
+    title_es: "Power BI para principiantes: Análisis de datos",
+    title_en: "Power BI for Beginners: Data Analysis",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 2.0,
+    durationStr: "2h",
+    skills: ["Power BI", "Data Analysis", "Business Intelligence"],
+    linkedin: "https://www.linkedin.com/learning/certificates/b4ebe093901cb25377f7a2e5c02a57a554690d33aa352cebb851910744e3abbc"
+  },
+  {
+    title_es: "Introducción a las habilidades profesionales en análisis de datos",
+    title_en: "Introduction to Professional Skills in Data Analysis",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 2.0,
+    durationStr: "2h",
+    skills: ["Data Analysis", "Analytics", "Business Intelligence"],
+    linkedin: "https://www.linkedin.com/learning/certificates/4e7a15895bd28fd42d76225f743c76eb5bfa2edc9c1ae2db99d369e25f779dc5"
+  },
+  {
+    title_es: "Aprende Power BI",
+    title_en: "Learn Power BI",
+    provider: "LinkedIn Learning",
+    year: 2026,
+    hours: 3.0,
+    durationStr: "3h",
+    skills: ["Power BI", "Data Analysis", "Dashboards"],
+    linkedin: "https://www.linkedin.com/learning/certificates/17041594da86be9bae474ba4a3dcc0a079cbbf11568fc44c3cfd84abb7ba0897"
+  },
+  {
     title_es: "Desarrolla tus habilidades de productividad con IA generativa con Microsoft y LinkedIn",
-    title_en: "Develop your productivity skills with generative AI with Microsfot and LinkedIn",
+    title_en: "Develop your productivity skills with generative AI with Microsoft and LinkedIn",
     provider: "LinkedIn Learning",
     year: 2025,
     hours: 3.4,                         // opcional, solo para meta
@@ -296,7 +369,7 @@ const COURSES = [
     skills: ["Active Directory", "Windows Server", "ServiceDesk"],
     linkedin: "https://www.linkedin.com/posts/eroszalazar_finalic%C3%A9-el-curso-invgate-service-management-activity-7406328203167911936-CLse?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-a4cQBcpCu9TOeJtHfVmW6rfKFX7yEHq8"
   },
-    {
+  {
     title_es: "InvGate Asset Management",
     title_en: "InvGate Asset Management",
     provider: "InvGate",
@@ -306,7 +379,6 @@ const COURSES = [
     skills: ["Active Directory", "Windows Server", "ServiceDesk"],
     linkedin: "https://www.linkedin.com/posts/eroszalazar_muy-contento-de-compartir-que-finalic%C3%A9-el-activity-7406302114353840130-sjuZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-a4cQBcpCu9TOeJtHfVmW6rfKFX7yEHq8"
   },
-
 ];
 
 

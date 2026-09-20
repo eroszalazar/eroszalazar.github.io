@@ -53,7 +53,7 @@ a{text-decoration:none;color:inherit}
 .hero__title{font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.1}
 .hero__title span{background:linear-gradient(90deg,var(--pri),var(--sec)); -webkit-background-clip:text; background-clip:text; color:transparent}
 .hero__subtitle{color:var(--text-300); margin:.9rem 0 1rem}
-.hero__badges{margin-bottom:1rem}
+.hero__badges{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-bottom:1rem}
 .hero__actions{display:flex; gap:.8rem; flex-wrap:wrap}
 .hero__visual{display:grid; place-items:center}
 
@@ -64,7 +64,7 @@ a{text-decoration:none;color:inherit}
 
 /* Chips & Cards */
 .chips{display:flex; gap:.6rem; flex-wrap:wrap; margin:1rem 0 1.4rem}
-.chip{padding:.45rem .8rem; border-radius:999px; border:1px solid var(--border); color:var(--text-100); background:var(--glass); backdrop-filter:blur(6px)}
+.chip{display:inline-flex; align-items:center; white-space:nowrap; padding:.45rem .8rem; border-radius:999px; border:1px solid var(--border); color:var(--text-100); background:var(--glass); backdrop-filter:blur(6px)}
 .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:.3rem}
 .card{background:linear-gradient(180deg, var(--bg-800), color-mix(in oklab, var(--bg-800) 85%, #000 15%)); border:1px solid var(--border); border-radius:14px; padding:1.1rem; box-shadow:var(--shadow); transform:translateY(0) rotateX(0); transition:transform .25s, box-shadow .25s, border-color .25s}
 .card:hover{transform:translateY(-4px); border-color:color-mix(in oklab, var(--pri) 35%, var(--border)); box-shadow:0 14px 34px rgba(0,0,0,.45)}
