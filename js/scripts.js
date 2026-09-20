@@ -36,6 +36,15 @@ const I18N = {
     btn_view_experience: "Ver experiencia",
     btn_contact: "Hablemos",
     btn_cv: "Descargar CV",
+    cv_modal_title: "Descargar Curriculum Vitae",
+    cv_modal_sub: "Selecciona el idioma de tu preferencia:",
+    cv_opt_es: "Español",
+    cv_opt_es_sub: "Versión en Español (PDF)",
+    cv_opt_en: "English",
+    cv_opt_en_sub: "English Version (PDF)",
+    cv_success_title: "¡Descarga exitosa!",
+    cv_success_msg: "muchas gracias por descargar mi cv, espero pronto tu mensaje :)",
+    cv_success_btn: "Aceptar",
     pill_it: "IT",
     pill_support: "Soporte",
     // About
@@ -145,6 +154,15 @@ const I18N = {
     btn_view_experience: "View experience",
     btn_contact: "Let’s talk",
     btn_cv: "Download CV",
+    cv_modal_title: "Download Resume / CV",
+    cv_modal_sub: "Select your preferred language:",
+    cv_opt_es: "Spanish",
+    cv_opt_es_sub: "Spanish Version (PDF)",
+    cv_opt_en: "English",
+    cv_opt_en_sub: "English Version (PDF)",
+    cv_success_title: "Download Successful!",
+    cv_success_msg: "Thank you very much for downloading my CV, I look forward to your message :)",
+    cv_success_btn: "Close",
     pill_it: "IT",
     pill_support: "Support",
     // About
@@ -575,4 +593,76 @@ window.addEventListener('scroll', () => {
     }
   });
 })();
+
+// =========== MODAL DESCARGAR CV ===========
+(function initCvModal(){
+  const cvBtn = document.getElementById('cvBtn');
+  const modal = document.getElementById('cvModal');
+  const overlay = document.getElementById('cvModalOverlay');
+  const closeBtn = document.getElementById('cvModalClose');
+  const choiceView = document.getElementById('cvChoiceView');
+  const successView = document.getElementById('cvSuccessView');
+  const successTitle = document.getElementById('cvSuccessTitle');
+  const successMsg = document.getElementById('cvSuccessMessage');
+  const successCloseBtn = document.getElementById('cvSuccessCloseBtn');
+  const optBtns = document.querySelectorAll('.cv-opt-btn');
+
+  if (!cvBtn || !modal) return;
+
+  function openModal(){
+    choiceView.hidden = false;
+    successView.hidden = true;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  cvBtn.addEventListener('click', openModal);
+  if (overlay) overlay.addEventListener('click', closeModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (successCloseBtn) successCloseBtn.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+
+  optBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const downloadLang = btn.getAttribute('data-lang') || 'es';
+      const fileUrl = downloadLang === 'en' 
+        ? 'assets/docs/CV_Eros_Zalazar_EN.pdf' 
+        : 'assets/docs/CV_Eros_Zalazar_ES.pdf';
+      const fileName = downloadLang === 'en' 
+        ? 'CV_Eros_Zalazar_EN.pdf' 
+        : 'CV_Eros_Zalazar_ES.pdf';
+
+      // Disparar descarga directa
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Mostrar mensaje de éxito y agradecimiento según idioma seleccionado
+      if (downloadLang === 'en') {
+        successTitle.textContent = "Download Successful!";
+        successMsg.textContent = "Thank you very much for downloading my CV, I look forward to your message :)";
+        if (successCloseBtn) successCloseBtn.textContent = "Close";
+      } else {
+        successTitle.textContent = "¡Descarga exitosa!";
+        successMsg.textContent = "muchas gracias por descargar mi cv, espero pronto tu mensaje :)";
+        if (successCloseBtn) successCloseBtn.textContent = "Aceptar";
+      }
+
+      choiceView.hidden = true;
+      successView.hidden = false;
+    });
+  });
+})();
+
 

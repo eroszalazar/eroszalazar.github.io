@@ -175,6 +175,110 @@ a{text-decoration:none;color:inherit}
 }
 .lightbox[hidden]{ display:none !important; }
 
+/* Modal Descargar CV */
+.cv-modal{
+  position: fixed; inset: 0; z-index: 1000;
+  display: grid; place-items: center;
+  padding: 1.2rem;
+}
+.cv-modal[hidden]{ display:none !important; }
+.cv-modal__overlay{
+  position: absolute; inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(6px);
+  animation: cvFadeIn .2s ease-out;
+}
+.cv-modal__card{
+  position: relative;
+  width: min(440px, 94vw);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.2rem 1.8rem 1.8rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+  text-align: center;
+  z-index: 1;
+  animation: cvPop .25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes cvFadeIn{ from{ opacity:0; } to{ opacity:1; } }
+@keyframes cvPop{
+  from{ opacity:0; transform:scale(.92) translateY(12px); }
+  to{ opacity:1; transform:scale(1) translateY(0); }
+}
+.cv-modal__close{
+  position: absolute; top: 14px; right: 14px;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border); background: #ffffff;
+  color: var(--text-300); font-size: 22px; line-height: 1;
+  display: grid; place-items: center; cursor: pointer;
+  transition: all .2s ease;
+}
+.cv-modal__close:hover{
+  color: var(--pri); border-color: var(--pri);
+  background: rgba(10,102,194,.06);
+  transform: scale(1.05);
+}
+.cv-modal__icon{
+  font-size: 2.5rem; line-height: 1; margin-bottom: .6rem;
+}
+.cv-modal__icon--success{
+  font-size: 3rem; margin-bottom: .8rem;
+  animation: cvBounce .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes cvBounce{
+  from{ transform:scale(0); }
+  to{ transform:scale(1); }
+}
+.cv-modal__title{
+  font-size: 1.35rem; color: var(--text-100); margin-bottom: .4rem; font-weight: 700;
+}
+.cv-modal__subtitle{
+  font-size: .92rem; color: var(--text-300); margin-bottom: 1.4rem;
+}
+.cv-modal__options{
+  display: grid; gap: .8rem; text-align: left;
+}
+.cv-opt-btn{
+  display: flex; align-items: center; gap: 1rem;
+  width: 100%; padding: .9rem 1.2rem;
+  border-radius: 14px; border: 1.5px solid var(--border);
+  background: #ffffff; color: var(--text-100);
+  cursor: pointer; transition: all .2s ease;
+}
+.cv-opt-btn:hover{
+  border-color: var(--pri);
+  background: rgba(10, 102, 194, 0.04);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.12);
+}
+.cv-opt-btn__flag{
+  font-size: 1.8rem; line-height: 1;
+}
+.cv-opt-btn__text{
+  flex: 1; display: flex; flex-direction: column; gap: .15rem;
+}
+.cv-opt-btn__label{
+  font-weight: 600; font-size: 1.02rem; color: var(--text-100);
+}
+.cv-opt-btn__format{
+  font-size: .8rem; color: var(--text-300);
+}
+.cv-opt-btn__arrow{
+  color: var(--pri); transition: transform .2s ease;
+}
+.cv-opt-btn:hover .cv-opt-btn__arrow{
+  transform: translateY(2px);
+}
+.cv-modal__message{
+  font-size: 1.05rem; color: var(--text-100); line-height: 1.5; margin: .8rem 0 1.6rem;
+}
+.cv-modal__actions{
+  display: flex; justify-content: center;
+}
+.cv-modal__actions .btn{
+  min-width: 140px;
+}
+
 
 /* ==== Redes (hero) ==== */
 .socials--hero{

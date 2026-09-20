@@ -76,6 +76,7 @@
                 <div class="hero__actions">
                     <a href="#experiencia" class="btn btn--primary" data-i18n="btn_view_experience">Ver experiencia</a>
                     <a href="#contacto" class="btn btn--ghost" data-i18n="btn_contact">Hablemos</a>
+                    <button id="cvBtn" class="btn btn--ghost" data-i18n="btn_cv">Descargar CV</button>
                 </div>
 
                 <!-- 🔗 Redes en el hero -->
@@ -362,6 +363,51 @@
     <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">
         <button class="lightbox__close" aria-label="Cerrar">×</button>
         <img src="" alt="Certificado" />
+    </div>
+
+    <!-- Modal Descargar CV -->
+    <div id="cvModal" class="cv-modal" hidden aria-modal="true" role="dialog" aria-labelledby="cvModalTitle">
+        <div class="cv-modal__overlay" id="cvModalOverlay"></div>
+        <div class="cv-modal__card">
+            <button class="cv-modal__close" id="cvModalClose" aria-label="Cerrar">&times;</button>
+            
+            <!-- Vista 1: Selección de Idioma -->
+            <div id="cvChoiceView" class="cv-modal__body">
+                <div class="cv-modal__icon">📄</div>
+                <h3 id="cvModalTitle" class="cv-modal__title" data-i18n="cv_modal_title">Descargar Curriculum Vitae</h3>
+                <p class="cv-modal__subtitle" data-i18n="cv_modal_sub">Selecciona el idioma de tu preferencia:</p>
+                
+                <div class="cv-modal__options">
+                    <button class="cv-opt-btn" data-lang="es">
+                        <span class="cv-opt-btn__flag">🇦🇷</span>
+                        <div class="cv-opt-btn__text">
+                            <span class="cv-opt-btn__label" data-i18n="cv_opt_es">Español</span>
+                            <span class="cv-opt-btn__format" data-i18n="cv_opt_es_sub">Versión en Español (PDF)</span>
+                        </div>
+                        <svg class="cv-opt-btn__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    </button>
+                    
+                    <button class="cv-opt-btn" data-lang="en">
+                        <span class="cv-opt-btn__flag">🇬🇧</span>
+                        <div class="cv-opt-btn__text">
+                            <span class="cv-opt-btn__label" data-i18n="cv_opt_en">English</span>
+                            <span class="cv-opt-btn__format" data-i18n="cv_opt_en_sub">English Version (PDF)</span>
+                        </div>
+                        <svg class="cv-opt-btn__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vista 2: Confirmación y Agradecimiento -->
+            <div id="cvSuccessView" class="cv-modal__body" hidden>
+                <div class="cv-modal__icon cv-modal__icon--success">🎉</div>
+                <h3 class="cv-modal__title" id="cvSuccessTitle" data-i18n="cv_success_title">¡Descarga exitosa!</h3>
+                <p class="cv-modal__message" id="cvSuccessMessage">muchas gracias por descargar mi cv, espero pronto tu mensaje :)</p>
+                <div class="cv-modal__actions">
+                    <button id="cvSuccessCloseBtn" class="btn btn--primary" data-i18n="cv_success_btn">Aceptar</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
